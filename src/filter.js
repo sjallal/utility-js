@@ -1,7 +1,7 @@
 const filter = (array, func) => {
   filtered = [];
   array.forEach((element) => {
-    filtered.push(func(element));
+    if (func(element)) filtered.push(element);
   });
   return filtered;
 };
